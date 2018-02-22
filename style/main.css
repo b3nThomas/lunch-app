@@ -1,0 +1,150 @@
+@font-face {
+    font-family: cheesepizza;
+    src: url(./fonts/cheesepizza.ttf);
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: cheesepizza;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 75px;
+    margin: 10px 0;
+}
+
+button {
+    background: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: cheesepizza;
+    font-size: 40px;
+    height: 55px;
+    width: 210px;
+    padding-bottom: 55px;
+    outline: none;
+    margin: 10px;
+    transition: 2;
+}
+
+button:hover {
+    background: rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+button:active {
+    background: rgb(65, 64, 64);
+}
+
+.hidden {
+    display: none;
+}
+
+#suggest-emojis {
+    font-size: 100px;
+    margin: 10px 0;
+}
+
+#timer-selector {
+    background: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px auto;
+}
+
+#timer-selector select {
+    background: black;
+    border: none;
+    color: white;
+    font-family: cheesepizza;
+    font-size: 45px;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    margin-bottom: 7px;
+    outline: none;
+}
+
+#timer-countdown-clock {
+    font-size: 50px;
+}
+
+.green-btn {
+    background: rgb(64, 170, 64);
+    width: 130px;
+}
+
+.green-btn:hover {
+    background: rgb(54, 139, 54);
+}
+
+.green-btn:active {
+    background: rgb(47, 121, 47);
+}
+
+.yellow-btn {
+    background: rgb(218, 191, 42);
+    width: 130px;
+}
+
+.yellow-btn:hover {
+    background: rgb(179, 157, 36);
+}
+
+.yellow-btn:active {
+    background: rgb(148, 130, 28);
+}
+
+.red-btn {
+    background: rgb(189, 45, 45);
+    width: 130px;
+}
+
+.red-btn:hover {
+    background: rgb(150, 30, 30);
+}
+
+.red-btn:active {
+    background: rgb(112, 16, 16);
+}
+
+.blink {
+    animation: blinker 3.5s linear infinite;
+}
+  
+@keyframes blinker {  
+    10% { background: rgba(255, 0, 0); }
+    20% { background: rgba(255, 153, 0); }
+    30% { background: rgb(255, 230, 0); }
+    40% { background: rgb(102, 255, 0); }
+    50% { background: rgb(0, 238, 255); }
+    60% { background: rgb(0, 102, 255); }
+    70% { background: rgb(119, 0, 255); }
+    80% { background: rgb(195, 0, 255); }
+    90% { background: rgb(245, 107, 250); }
+}
+
+@media (max-width: 415px) {
+    h1 {
+        margin: 0;
+        font-size: 75px;
+    }
+    
+    h2 {
+        margin: 0;
+        font-size: 50px;
+    }
+
+    #suggest-emojis {
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "lunch-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "nodemon --ignore ./main.js -e js --exec \"npm run webpack\"",
+        "webpack": "./node_modules/.bin/webpack ./js/app.js ./main.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/b3nThomas/lunch-app.git"
+    },
+    "dependencies": {
+        "nodemon": "^1.15.1",
+        "webpack": "^3.11.0"
+    }
+}
