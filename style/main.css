@@ -66,8 +66,8 @@ button:active {
     border: none;
     color: white;
     font-family: cheesepizza;
-    font-size: 45px;
-    text-align: center;
+    font-size: 30px;
+    text-align: right;
     height: 60px;
     width: 100px;
     margin-bottom: 7px;
